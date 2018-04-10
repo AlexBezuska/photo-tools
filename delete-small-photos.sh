@@ -10,7 +10,7 @@ command -v convert >/dev/null 2>&1 || { echo >&2 "I require imagemagick but it's
 
 
 if [ -z "$1" ]; then
-  echo "Please add a path to a folder containing images\n Example: \n sh delete-small-images /my/folder/ \n"
+  echo "Please add a path to a folder containing photos\n Example: \n sh delete-small-photos.sh /my/folder/ \n"
 else
 
   images=0
