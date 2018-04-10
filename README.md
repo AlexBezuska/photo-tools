@@ -1,5 +1,15 @@
-# photo-tools
+# Photo Tools
 
+
+#### `rename-photos.sh`
+
+Utility to rename all photos in a given folder to include cameraname and date each photo was taken.
+
+##### Usage:
+
+```
+sh rename-photos.sh /my/folder/
+```
 
 
 #### `delete-small-images.sh`
