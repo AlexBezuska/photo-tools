@@ -1,9 +1,13 @@
 # Photo Tools
 
 
-#### `extract-photos.sh` (Coming soon)
+#### `extract-photos.sh`
 
 Utility which dives recursively into a directory looking for all photos (example: an Apple iPhoto/Photos library) and moves them to another folder
+
+```
+sh extract-photos.sh /my/folder/
+```
 
 
 #### `rename-photos.sh`
