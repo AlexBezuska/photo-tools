@@ -23,12 +23,12 @@ sh rename-photos.sh /my/folder/
 
 #### `delete-small-photos.sh`
 
-This is mainly for removing some odd thumbnails and previews left over from the photo library software I used to use.
+This is mainly for removing some odd thumbnails, previews, and faces left over from the photo library software I used to use.
 
 ##### Usage:
 
 ```
-sh delete-small-images.sh /my/folder/
+sh delete-small-photos.sh /my/folder/
 ```
 
 
