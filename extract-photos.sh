@@ -9,17 +9,19 @@ if [ -z "$1" ]; then
   echo "Please add a path to a folder containing images\n Example: \n sh extract-photos.sh /original/folder/ \n"
 else
 
-# This could be done much better 
-find "${1}" -name '*.jpg' -exec gmv -v {} $photoDestination \;
-find "${1}" -name '*.JPG' -exec gmv -v {} $photoDestination \;
-find "${1}" -name '*.jpeg' -exec gmv -v {} $photoDestination \;
-find "${1}" -name '*.png' -exec gmv -v {} $photoDestination \;
-find "${1}" -name '*.PNG' -exec gmv -v {} $photoDestination \;
+mkdir $photoDestination
+  find "${1}" -name '*.jpg' -exec gmv -v {} $photoDestination \;
+  find "${1}" -name '*.JPG' -exec gmv -v {} $photoDestination \;
+  find "${1}" -name '*.jpeg' -exec gmv -v {} $photoDestination \;
+  find "${1}" -name '*.png' -exec gmv -v {} $photoDestination \;
+  find "${1}" -name '*.PNG' -exec gmv -v {} $photoDestination \;
 
+mkdir $videoDestination
+  find "${1}" -name '*.mov' -exec gmv -v {} $videoDestination \;
+  find "${1}" -name '*.MOV' -exec gmv -v {} $videoDestination \;
+  find "${1}" -name '*.mp4' -exec gmv -v {} $videoDestination \;
+  find "${1}" -name '*.m4v' -exec gmv -v {} $videoDestination \;
+  find "${1}" -name '*.avi' -exec gmv -v {} $videoDestination \;
+  find "${1}" -name '*.AVI' -exec gmv -v {} $videoDestination \;
 
-find "${1}" -name '*.mov' -exec gmv -v {} $videoDestination \;
-find "${1}" -name '*.MOV' -exec gmv -v {} $videoDestination \;
-find "${1}" -name '*.mp4' -exec gmv -v {} $videoDestination \;
-find "${1}" -name '*.m4v' -exec gmv -v {} $videoDestination \;
-find "${1}" -name '*.avi' -exec gmv -v {} $videoDestination \;
-find "${1}" -name '*.AVI' -exec gmv -v {} $videoDestination \;
+fi
